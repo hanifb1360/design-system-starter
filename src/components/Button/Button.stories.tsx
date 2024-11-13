@@ -1,4 +1,3 @@
-
 import { Meta, StoryFn } from '@storybook/react';
 import { Button, ButtonProps } from './index';
 
@@ -8,6 +7,8 @@ const meta: Meta = {
   argTypes: {
     backgroundColor: { control: 'color' },
     onClick: { action: 'clicked' },
+    'aria-pressed': { control: 'boolean' },
+    disabled: { control: 'boolean' },
   },
   parameters: {
     a11y: {
@@ -31,14 +32,14 @@ Secondary.args = {
   label: 'Secondary Button',
 };
 
-export const Large = Template.bind({});
-Large.args = {
-  label: 'Large Button',
-  size: 'large',
+export const Toggle = Template.bind({});
+Toggle.args = {
+  label: 'Toggle Button',
+  'aria-pressed': false,
 };
 
-export const Small = Template.bind({});
-Small.args = {
-  label: 'Small Button',
-  size: 'small',
+export const Disabled = Template.bind({});
+Disabled.args = {
+  label: 'Disabled Button',
+  disabled: true,
 };
