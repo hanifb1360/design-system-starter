@@ -1,0 +1,37 @@
+
+.storybook-button {
+    font-family: 'Arial', sans-serif;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .storybook-button--primary {
+    background-color: #1ea7fd;
+    color: white;
+  }
+  
+  .storybook-button--secondary {
+    background-color: #e4e7eb;
+    color: #333;
+  }
+  
+  .storybook-button--small {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  
+  .storybook-button--medium {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  
+  .storybook-button--large {
+    font-size: 18px;
+    padding: 15px 30px;
+  }
+  
+  .storybook-button:hover {
+    opacity: 0.9;
+  }
